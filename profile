@@ -16,3 +16,11 @@ then
   eval "$(rbenv init -)"
 fi
 
+# let's say we're using homebrew to manage softwares
+if [ -s /usr/local/bin/brew ]
+then
+  if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+  fi
+fi
+
