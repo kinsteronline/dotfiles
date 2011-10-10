@@ -2,6 +2,9 @@
 #
 export ARCHFLAGS="-arch x86_64"
 
+# Adding local first since it's last in /etc/paths
+export PATH=/usr/local/bin:${PATH}
+
 # shell histories
 export HISTIGNORE="&:ls:[bf]g:exit"
 alias hist="history | tail -56"
