@@ -1,7 +1,10 @@
 export EDITOR=vim
 #
 # rbenv & rubies
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which rbenv > /dev/null; then 
+	eval "$(rbenv init -)";
+	export PATH="$HOME/.rbenv/bin:$PATH"
+fi
 
 #
 # node & npm
@@ -12,6 +15,13 @@ export PATH=/usr/local/share/npm/bin:${PATH}
 export HISTSIZE=2000
 export HISTCONTROL=ignoreboth
 export HISTIGNORE="&:ls:[bf]g:exit"
+
+#
+# bash completions
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+	. $(brew --prefix)/etc/bash_completion
+fi
+
 #
 # mac stuff
 defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu"
