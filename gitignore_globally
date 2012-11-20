@@ -1,0 +1,10 @@
+# 
+# git config --global core.excludesfile ~/.gitignore_globally
+#
+*.swp
+.DS_Store
+*.log
+*.sqlite?(3)
+Icon?
+
+
