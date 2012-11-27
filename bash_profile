@@ -36,10 +36,8 @@ defaults write com.apple.terminal StringEncodings -array 4
 
 #
 # git
-function parse_git_branch_and_add_brackets {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\ \[\1\]/'
-}
-PS1="\h:\W \u\[\033[0;32m\]\$(parse_git_branch_and_add_brackets) \[\033[0m\]\$ "
+export GIT_PS1_SHOWDIRTYSTATE='yes'
+PS1='\u: \W$(__git_ps1 " (%s)") \$ '
 
 #
 # python
