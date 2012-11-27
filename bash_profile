@@ -37,7 +37,7 @@ defaults write com.apple.terminal StringEncodings -array 4
 #
 # git
 export GIT_PS1_SHOWDIRTYSTATE='yes'
-PS1='\u: \W$(__git_ps1 " (%s)") \$ '
+PS1='\u ➠ \W$(__git_ps1 " (%s)") \$ '
 
 #
 # python
