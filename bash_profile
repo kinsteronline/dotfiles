@@ -14,7 +14,7 @@ export PATH=/usr/local/share/npm/bin:${PATH}
 # histories
 export HISTSIZE=2000
 export HISTCONTROL=ignoreboth
-export HISTIGNORE="&:ls:[bf]g:exit"
+export HISTIGNORE="ls*:cd*:pwd:[bf]g:exit:history"
 
 #
 # bash completions
@@ -44,3 +44,6 @@ PS1='\u ➠ \W$(__git_ps1 " (%s)") \$ '
 source /usr/local/bin/virtualenvwrapper.sh
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
  
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
