@@ -1,10 +1,7 @@
 export EDITOR=vim
 #
 # rbenv & rubies
-if which rbenv > /dev/null; then 
-	eval "$(rbenv init -)";
-	export PATH="$HOME/.rbenv/bin:$PATH"
-fi
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 #
 # node & npm
