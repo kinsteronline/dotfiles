@@ -25,3 +25,8 @@ nmap <Leader><Leader> :bnext<CR>
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
+map gn :bn<cr>
+map gp :bp<cr>
+map gd :bd<cr>
+
+
