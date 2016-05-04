@@ -25,6 +25,8 @@ nmap <Leader><Leader> :bnext<CR>
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
 map gn :bn<cr>
 map gp :bp<cr>
 map gd :bd<cr>
