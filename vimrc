@@ -37,5 +37,5 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 let g:ctrlp_use_caching = 0
 
 set grepprg=ag\ --nogroup\ --nocolor
-nnoremap K :silent grep! "\b<C-R><C-W>\n"<CR>:cw<CR>
+nnoremap K :grep! "\b<C-R><C-W>\n"<CR>:cw<CR>
 
