@@ -14,6 +14,9 @@ set hidden
 set history=100
 set laststatus=2
 
+set list
+set listchars=tab:⩥\ ,trail:∙
+
 imap jk <esc>
 
 let mapleader = "\<Space>"
