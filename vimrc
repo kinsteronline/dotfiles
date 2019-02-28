@@ -5,17 +5,18 @@ filetype indent plugin on
 set t_Co=256
 set encoding=UTF-8
 
+colorscheme jellybeans
+
 set number
 set showtabline=2
 set tabstop=2 shiftwidth=2 expandtab
 set modeline
 set nocompatible
-set hidden
 set history=100
 set laststatus=2
+set hidden
 
-set list
-set listchars=tab:⩥\ ,trail:∙
+set list listchars=tab:⩥\ ,trail:∙
 
 imap jk <esc>
 
