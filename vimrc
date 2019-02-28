@@ -1,10 +1,9 @@
-execute pathogen#infect()
-
-colorscheme Tomorrow-Night-Eighties
-
 filetype off
 syntax on
 filetype indent plugin on
+
+set t_Co=256
+set encoding=UTF-8
 
 set number
 set showtabline=2
@@ -19,16 +18,8 @@ imap jk <esc>
 
 let mapleader = "\<Space>"
 nnoremap <Leader>; :w<CR>
-nnoremap <Leader>p :CtrlP<CR>
 nmap <Leader><Leader> :bnext<CR>
-
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
-
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
-
-map gn :bn<cr>
-map gp :bp<cr>
-map gd :bd<cr>
+nnoremap <Leader>l :bn<cr>
+nnoremap <Leader>h :bp<cr>
 
 
