@@ -22,4 +22,7 @@ nmap <Leader><Leader> :bnext<CR>
 nnoremap <Leader>l :bn<cr>
 nnoremap <Leader>h :bp<cr>
 
+let g:lightline = {
+  \ 'colorscheme': 'jellybeans',
+  \ }
 
