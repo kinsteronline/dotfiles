@@ -33,3 +33,9 @@ let g:move_key_modifier = 'C'
 
 nnoremap <Leader>p :CtrlP<CR>
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_use_caching = 0
+
+set grepprg=ag\ --nogroup\ --nocolor
+nnoremap K :silent grep! "\b<C-R><C-W>\n"<CR>:cw<CR>
+
