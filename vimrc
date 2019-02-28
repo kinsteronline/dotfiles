@@ -31,3 +31,5 @@ let g:lightline = {
 
 let g:move_key_modifier = 'C'
 
+nnoremap <Leader>p :CtrlP<CR>
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
