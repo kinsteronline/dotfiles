@@ -16,6 +16,8 @@ set history=100
 set laststatus=2
 set hidden
 
+set mouse=a
+
 set list listchars=tab:⩥\ ,trail:∙
 
 imap jk <esc>
@@ -37,6 +39,5 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 let g:ctrlp_use_caching = 0
 
-" set grepprg=ag\ --nogroup\ --nocolor
-" nnoremap K :grep! "\b<C-R><C-W>\n"<CR>:cw<CR>
+set grepprg=ag\ --nogroup\ --nocolor
 
