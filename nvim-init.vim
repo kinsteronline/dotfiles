@@ -20,6 +20,7 @@ Plug 'ap/vim-buftabline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'junegunn/vim-emoji'
+Plug 'Yggdroot/indentLine'
 
 " Clojure stuff
 Plug 'tpope/vim-fireplace'
